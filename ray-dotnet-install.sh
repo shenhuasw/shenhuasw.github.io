@@ -59,7 +59,7 @@ create_soft_link() {
     # ln -s ~/.dotnet/dotnet /usr/bin/dotnet
 
     echo "添加PATH"
-    local exportFile="/root/.bashrc"
+    local exportFile="/etc/bashrc"
     touch $exportFile
     echo '' >> $exportFile
     echo 'export DOTNET_ROOT=$HOME/.dotnet' >> $exportFile
